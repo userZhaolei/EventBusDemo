@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        EventBus.getDefault().removeAllStickyEvents();
+          EventBus.getDefault().removeAllStickyEvents();
         EventBus.getDefault().unregister(this);
     }
 }
